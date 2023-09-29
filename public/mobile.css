@@ -1,0 +1,182 @@
+@media only screen and (max-width: 700px) {
+    body{
+        background-color: #bd6e35;
+        font-family: system-ui;
+        background-image: url('./image/juana1.jpg');
+        background-repeat: no-repeat;
+        background-size: 750px;
+        
+    }
+
+    .hero-img{
+        border-radius: 100vh;
+        margin-left:155px;
+        height: 200px;
+        width: 200px;
+        margin-right: 100px;
+        margin-top:5px;
+    }
+    .grap{
+        margin-top: 200px;
+        margin-bottom: 30px;
+        margin-left: 70px;
+        margin-right: 40px;
+    }
+    .container{
+        width: 400px;
+        margin: auto;
+        transition: 0.9s;
+        
+    }
+    header{
+        display: grid;
+        grid-template-columns: 1fr 50px;
+        margin-top: 30px;
+    }
+    
+    header .shopping{
+        position: relative;
+        text-align: right;
+        
+    }
+    header .shopping img{
+        width: 30px;
+    }
+    .card{
+        position: fixed;
+        top:0;
+        left: 100%;
+        width: 250px;
+        background-color: #453E3B;
+        height: 100vh;
+        transition: 0.5s;
+        
+    }
+    .active .card{
+        left: calc(100% - 250px);
+        position: flex;
+       
+    }
+    .active .container{
+       transform: translateX(-100px);
+       
+    }
+    .card h1{
+        color: #E8BC0E;
+        font-weight: 300;
+        margin-left: 10;
+        padding: 3 10px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        
+    }
+    .card .checkOut{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+    
+    }
+    .card .checkOut div{
+        background-color: #E8BC0E;
+        width: 100%;
+        height: 80px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .card .checkOut div:nth-child(2){
+        background-color: #1C1F25;
+        color: #fff;
+    }
+    .clear-cart {
+        background-color: #E8BC0E;
+        color: #453E3B;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        display: center;
+        
+    }
+    .clear-cart:hover {
+        background-color: #994927;
+        color: #E8BC0E;
+    }
+    .listCard li{
+        display: grid;
+        grid-template-columns: 100px repeat(2, 1fr);
+        color: #fff;
+        row-gap: 10px;
+    }
+    .listCard li div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .listCard li img{
+        width: 90%;
+    }
+    .listCard li button{
+        background-color: #fff5;
+        border: none;
+    }
+    .listCard .count{
+        margin: 0 10px;
+    }
+    
+
+    /* CONTACT */
+    .contact .container {
+        margin-top: 80px;
+        text-align: center;
+        background: #E9F9FF;
+        padding: 5px;
+        border-radius: 10px;
+        background-image: url('./image/cover19.png');
+        background-repeat: no-repeat;
+        width: 110%; /* Adjust the width as needed */
+        margin-right: 50px;
+        
+    }
+    
+    .contact .container h3 {
+        margin: 20px 0px;
+    }
+    
+    /* Rest of your styles */
+    
+    .contact .fa {
+    margin-right: 20px;
+    font-size: 20px;
+    color: var(--blue);
+    }
+    .contact .quick-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    }
+    .contact .quick-links ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    }
+    .contact .quick-links ul li {
+    margin: 0px 10px;
+    color: var(--dark-purple);
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    }
+    .copyright p {
+    color: var(--dark-purple);
+    font-weight: bold;
+    text-decoration: none;
+    }   
+
+
+}
